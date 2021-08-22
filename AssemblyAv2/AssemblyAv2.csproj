@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>AssemblyA</AssemblyName>
+    <RootNamespace>AssemblyA</RootNamespace>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\rundle\dev.to\2021-08-21\LoadContextBench\LoadContextBench\bin\Debug\v2</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\rundle\dev.to\2021-08-21\LoadContextBench\LoadContextBench\bin\Release\v2</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AssemblyAInterfacev2\AssemblyAInterfacev2.csproj" />
+  </ItemGroup>
+
+</Project>
